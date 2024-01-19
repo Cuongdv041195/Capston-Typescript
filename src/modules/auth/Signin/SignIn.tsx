@@ -1,4 +1,3 @@
-import React from 'react'
 import { useAuth } from '../../../contexts/UserContext/UserContext'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
@@ -18,7 +17,7 @@ const SignIn = () => {
     },
   })
   const { mutate: handleSignin, isPending } = useMutation({
-    mutationFn: (values) => signinAPI(values), //{ taiKhoan : "" , matKhau:""}
+    mutationFn: (values: any) => signinAPI(values), //{ taiKhoan : "" , matKhau:""}
     onSuccess: (values) => {
       //values là thông tin user
       handleSigninContext(values)
@@ -27,7 +26,7 @@ const SignIn = () => {
     },
     onError: () => {},
   })
-  const onSubmit = (formValues) => {
+  const onSubmit = (formValues: any) => {
     handleSignin(formValues) // { taiKhoan : "" , matKhau:""}
   }
 

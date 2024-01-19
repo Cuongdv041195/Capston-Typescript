@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 import { CURRENT_USER } from '../../constants'
-import { CurrentUser, SignIn } from '../../types/user.type'
+import { SignIn } from '../../types/user.type'
 
 const UserContext = createContext<any>(null)
 

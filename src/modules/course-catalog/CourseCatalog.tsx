@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import CourseCatalogProfile from './CourseCatalogProfile'
 import ShowCourse from './ShowCourse/ShowCourse'
 
-const CourseCatalog = () => {
+const CourseCatalog: React.FC = (): JSX.Element => {
   const { courseID } = useParams()
   return (
     <div>

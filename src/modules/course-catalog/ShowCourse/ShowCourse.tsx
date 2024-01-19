@@ -15,7 +15,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import classes from './styles.module.css'
 import { KhoaHoc } from '../../../types/course.type'
 
-const ShowCourse = ({ courseID }) => {
+const ShowCourse = ({ courseID }: any) => {
   const navigate = useNavigate()
   const { data = [] } = useQuery({
     queryKey: ['course-catalog-detail', courseID],

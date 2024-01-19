@@ -17,7 +17,7 @@ import Swal from 'sweetalert2'
 import { CURRENT_USER } from '../../../constants'
 import { PATH } from '../../../routes/path'
 
-const CourseProfile = ({ courseID }) => {
+const CourseProfile = ({ courseID }: any) => {
   const { data } = useQuery({
     queryKey: ['course-details', courseID],
     queryFn: () => getDetailCourseAPI(courseID),

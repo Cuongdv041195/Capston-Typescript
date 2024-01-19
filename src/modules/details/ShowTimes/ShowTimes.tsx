@@ -3,7 +3,7 @@ import React from 'react'
 import { getDetailCourseAPI } from '../../../apis/course'
 import { Container, Typography } from '@mui/material'
 
-const Showtimes = ({ courseID }) => {
+const Showtimes: React.FC = ({ courseID }: any) => {
   const { data } = useQuery({
     queryKey: ['course-details', courseID],
     queryFn: () => getDetailCourseAPI(courseID),

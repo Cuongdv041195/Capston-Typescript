@@ -1,4 +1,4 @@
-import { Button, CardContent, Container, Grid, Typography } from '@mui/material'
+import { CardContent, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
 import pic1 from '../../../assets/pic1.png'
 import pic2 from '../../../assets/pic2.png'

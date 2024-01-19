@@ -4,8 +4,8 @@ import { Container, Typography } from '@mui/material'
 import { useQuery } from '@tanstack/react-query'
 import { getDetailCourseCatalogAPI } from '../../../apis/course'
 
-const CourseCatalogProfile = ({ courseID }) => {
-  const { data = {} } = useQuery({
+const CourseCatalogProfile: React.FC = ({ courseID }: any): JSX.Element => {
+  const { data } = useQuery({
     queryKey: ['course-catalog-detail', courseID],
     queryFn: () => getDetailCourseCatalogAPI(courseID),
     // enabled: !!courseID,
